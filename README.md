@@ -21,11 +21,11 @@ The **Sediment Transport Calculator** is a MATLAB-based graphical user interface
 
 ## **Input Parameters**
 The following inputs are required (all fields accept numeric values):
-- **Breaker Height (m):** Height of the breaking wave (\(H_b\)).
-- **Breaking Angle (°):** Angle of the wave at the breaker line (\(\theta_b\)).
+- **Breaker Height (m):** Height of the breaking wave (Hb).
+- **Breaking Angle (°):** Angle of the wave at the breaker line (heta_b).
 - **K:** Empirical sediment transport coefficient.
-- **Berm Height (m):** Height of the berm above the water level (\(B\)).
-- **Depth of Closure (m):** Maximum depth of significant sediment motion (\(h^*\)).
+- **Berm Height (m):** Height of the berm above the water level (B).
+- **Depth of Closure (m):** Maximum depth of significant sediment motion (h^*).
 
 ---
 
