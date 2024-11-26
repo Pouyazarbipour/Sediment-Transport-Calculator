@@ -65,9 +65,9 @@ The application calculates the following:
 ## **Equations**
 The application uses the following equations:
 1. **Wave Energy Flux (Eb)**  
-   \[
-   E_b = \frac{\rho g H_b^2}{8}
-   \]
+Wave Energy Flux (Eb):
+Eb = (ρ * g * Hb²) / 8
+
 2. **Sediment Transport Coefficient (Cq)**  
    \[
    C_q = \frac{K E_b C_b}{\rho g (s - 1) (1 - p)}
