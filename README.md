@@ -31,15 +31,15 @@ The following inputs are required (all fields accept numeric values):
 
 ## **Output Values**
 The application calculates the following:
-- **Sediment Transport Rate (\(Q\)) (m³/s):** Transport rate in cubic meters per second.
-- **Annual Sediment Transport Rate (\(Q_y\)) (m³/yr):** Transport rate extrapolated to one year.
-- **Longshore Transport Rate (\(G\)) (m²/s):** Rate of sediment transported along the shore.
+- **Sediment Transport Rate (Q) (m³/s):** Transport rate in cubic meters per second.
+- **Annual Sediment Transport Rate (Qy) (m³/yr):** Transport rate extrapolated to one year.
+- **Longshore Transport Rate (G) (m²/s):** Rate of sediment transported along the shore.
 
 ---
 
 ## **Getting Started**
 ### **Requirements**
-- MATLAB R2021a or later.
+- MATLAB R2017a or later.
 - **Toolbox:** MATLAB App Designer or equivalent GUI support.
 
 ### **Installation**
@@ -64,34 +64,22 @@ The application calculates the following:
 
 ## **Equations**
 The application uses the following equations:
-1. **Wave Energy Flux (\(E_b\))**  
+1. **Wave Energy Flux (Eb)**  
    \[
    E_b = \frac{\rho g H_b^2}{8}
    \]
-2. **Sediment Transport Coefficient (\(C_q\))**  
+2. **Sediment Transport Coefficient (Cq)**  
    \[
    C_q = \frac{K E_b C_b}{\rho g (s - 1) (1 - p)}
    \]
-3. **Sediment Transport Rate (\(Q\))**  
+3. **Sediment Transport Rate (Q)**  
    \[
    Q = C_q \cos(\theta_b) \sin(\theta_b)
    \]
-4. **Longshore Transport Rate (\(G\))**  
+4. **Longshore Transport Rate (G)**  
    \[
    G = \frac{2 C_q \cos(2\theta_b)}{h^* + B}
    \]
-
----
-
-## **Contributing**
-Contributions to improve the functionality or add new features are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch for your feature:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit and push your changes.
-4. Create a pull request to the main branch.
 
 ---
 
@@ -105,4 +93,3 @@ For questions or feedback, please reach out to pouyazarbipour@gmail.com.
 
 Enjoy using the **Sediment Transport Calculator** to explore and analyze coastal engineering scenarios!
 
-Would you like to add any specific details or customization?
