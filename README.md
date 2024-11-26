@@ -51,9 +51,9 @@ The application calculates the following:
 3. Open the `sediment_transport_calculator.m` file in MATLAB.
 
 ### **Usage**
-1. Run the `Sand` class by typing the following in the MATLAB Command Window:
+1. Run the `sediment_transport_calculator` class by typing the following in the MATLAB Command Window:
    ```matlab
-   Sand
+   sediment_transport_calculator
    ```
 2. A GUI window will open. Enter the input parameters in the "Input Values" panel.
 3. Click the **Calculate** button to compute sediment transport rates.
@@ -65,21 +65,20 @@ The application calculates the following:
 ## **Equations**
 The application uses the following equations:
 1. **Wave Energy Flux (Eb)**  
-Wave Energy Flux (Eb):
+
 Eb = (ρ * g * Hb²) / 8
 
 2. **Sediment Transport Coefficient (Cq)**  
-   \[
-   C_q = \frac{K E_b C_b}{\rho g (s - 1) (1 - p)}
-   \]
+
+Cq = (K * Eb * Cb) / (ρ * g * (s - 1) * (1 - p))
+
 3. **Sediment Transport Rate (Q)**  
-   \[
-   Q = C_q \cos(\theta_b) \sin(\theta_b)
-   \]
+
+Q = Cq * cos(θb) * sin(θb)
+
 4. **Longshore Transport Rate (G)**  
-   \[
-   G = \frac{2 C_q \cos(2\theta_b)}{h^* + B}
-   \]
+
+G = (2 * Cq * cos(2 * θb)) / (h* + B)
 
 ---
 
