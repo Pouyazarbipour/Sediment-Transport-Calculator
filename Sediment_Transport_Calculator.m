@@ -1,3 +1,5 @@
+%% POUYA ZARBIPOUR LAKPOSHTEH EMAIL: pouyazarbipour@gmail.com
+
 classdef Sediment_Transport_Calculator < handle
     properties
         % UI Components
@@ -43,7 +45,7 @@ classdef Sediment_Transport_Calculator < handle
                                        'Value', 0.5, ...
                                        'Position', [160, 190, 100, 22]);
             
-            uilabel(obj.inputPanel, 'Text', 'Breaking Angle (°):', ...
+            uilabel(obj.inputPanel, 'Text', 'Breaking Angle (Â°):', ...
                     'Position', [10, 150, 150, 20]);
             obj.angle0Field = uieditfield(obj.inputPanel, 'numeric', ...
                                           'Value', 10, ...
@@ -77,19 +79,19 @@ classdef Sediment_Transport_Calculator < handle
                      'ButtonPushedFcn', @(~, ~) obj.reset());
             
             % Output Fields and Labels
-            uilabel(obj.outputPanel, 'Text', 'Q (m³/s):', ...
+            uilabel(obj.outputPanel, 'Text', 'Q (mÂ³/s):', ...
                     'Position', [10, 190, 150, 20]);
             obj.qoutField = uieditfield(obj.outputPanel, 'numeric', ...
                                         'Editable', 'off', ...
                                         'Position', [160, 190, 100, 22]);
             
-            uilabel(obj.outputPanel, 'Text', 'Q (m³/yr):', ...
+            uilabel(obj.outputPanel, 'Text', 'Q (mÂ³/yr):', ...
                     'Position', [10, 150, 150, 20]);
             obj.qyoutField = uieditfield(obj.outputPanel, 'numeric', ...
                                          'Editable', 'off', ...
                                          'Position', [160, 150, 100, 22]);
             
-            uilabel(obj.outputPanel, 'Text', 'G (m²/s):', ...
+            uilabel(obj.outputPanel, 'Text', 'G (mÂ²/s):', ...
                     'Position', [10, 110, 150, 20]);
             obj.GoutField = uieditfield(obj.outputPanel, 'numeric', ...
                                         'Editable', 'off', ...
@@ -119,17 +121,17 @@ classdef Sediment_Transport_Calculator < handle
                 Cb = sqrt(g * db);
                 Cq = (K * Eb * Cb) / (rho * g * (s - 1) * (1 - p));
                 
-                % Sediment transport rate Q (m³/s)
+                % Sediment transport rate Q (mÂ³/s)
                 Q = Cq * cos(theta_b) * sin(theta_b);
                 Q = round(Q, 3);
                 obj.qoutField.Value = Q;
                 
-                % Sediment transport rate Q (m³/yr)
+                % Sediment transport rate Q (mÂ³/yr)
                 Qy = Q * 31536000; % Seconds in a year
                 Qy = round(Qy, 2);
                 obj.qyoutField.Value = Qy;
                 
-                % Longshore transport rate G (m²/s)
+                % Longshore transport rate G (mÂ²/s)
                 G = (2 * Cq * cos(2 * theta_b)) / (h_star + B);
                 G = round(G, 3);
                 obj.GoutField.Value = G;
