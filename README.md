@@ -1,6 +1,7 @@
 # Sediment Transport Calculator
 
-The **Sediment Transport Calculator** is a MATLAB-based graphical user interface (GUI) application designed to compute sediment transport rates using common coastal engineering equations. This tool is useful for researchers, engineers, and students working in coastal engineering and sediment transport studies.
+The **Sediment Transport Calculator** is a graphical user interface (GUI) application designed to compute sediment transport rates using common coastal engineering equations. This tool is useful for researchers, engineers, and students working in coastal engineering and sediment transport studies.
+To download the **.EXE** file, visit this [link](https://drive.google.com/file/d/137_9CPs8-XEsOolVuAuC_23UH1mE-e4Z/view?usp=sharing).
 
 ---
 
